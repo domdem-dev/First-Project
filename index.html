@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+
+  <title>Frontend Mentor | QR code component</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: hsl(212, 45%, 89%);
+      min-height: 100vh;
+    }
+
+    .outfit {
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+
+      font-style: normal;
+    }
+
+    .card {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: hsl(0, 0%, 100%);
+      width: 300px;
+      height: 500px;
+      max-height: fit-content;
+      margin: auto;
+      padding: 20px;
+      border-radius: 15px;
+
+      .box {
+        box-shadow:
+          -5px 0 5px -5px rgba(0, 0, 0, 0.5),
+          /* sinistra */
+          5px 0 5px -5px rgba(0, 0, 0, 0.5),
+          /* destra */
+          0 5px 5px -5px rgba(0, 0, 0, 0.5);
+        /* sotto */
+      }
+
+
+    }
+
+    .qr-code {
+      height: auto;
+      width: 300px;
+      padding: 0;
+      margin: 0;
+      border-radius: 7px;
+    }
+
+    .text {
+      max-width: 300px;
+      margin: auto;
+
+
+    }
+
+    h1 {
+      color: hsl(218, 44%, 22%);
+      font-weight: 700;
+
+
+    }
+
+    p {
+      color: hsl(216, 15%, 48%);
+      font-weight: 400;
+
+      font-size: 15px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <section class="card">
+    <img src="./images/image-qr-code.png" alt="qr-code" class="qr-code">
+    <div class="text outfit">
+      <h1><b>Improve your front-end skills by building projects<b></h1>
+      <p>
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level
+      </p>
+    </div>
+  </section>
+</body>
+
+</html>
